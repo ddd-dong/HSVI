@@ -1,316 +1,67 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSVI</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/main.css">
+    <title>coverflow  effect swiper</title>
+    <link rel="stylesheet" type="text/css"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="static/about_us.css">   
+    <link rel="stylesheet" type="text/css" href="static/upnav.css">
 </head>
-
 <body>
-    <!--navbar-->
-    <nav class="navbar-dark p-3 navbar-expand-lg navbar nav_menu" style="background-color: black;">
-        <div class="container">
-
-            <a href="index.html" class="navbar-brand">
-                <h3>HSVI</h3>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html"><h5>Home</h5></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         關於我們
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
-                          <li><a class="dropdown-item text-white" href="#main">總召</a></li>
-                          <li><a class="dropdown-item text-white" href="#social">公關組</a></li>
-                          <li><a class="dropdown-item text-white" href="#live2d">建模組</a></li>
-                          <li><a class="dropdown-item text-white" href="#smellbook">文書組</a></li>
-                          <li><a class="dropdown-item text-white" href="#draw">繪師組</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>展望</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>何謂Vtuber</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>工作細項</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href=""><h5>徵人啟事</h5></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- 團隊介紹 -->
-    <div class="container text-center pt-5">
-        <div class="container col-xxl-8 px-4 py-5">
-            <h5 class="display-4 fw-bold">團隊介紹</h5>
-            <div class="row align-items-center g-5 py-5 align-self-center">
-                <div class="col col-sm-12 col-lg-6 align-self-center align-items-center ">
-                    <img src="static/aboutus_photo.png" class="mx-lg-auto img-fluid align-items-center rounded-circle"
-                        alt="Bootstrap Themes" loading="lazy">
-                </div>
-                <div class="col-lg-6 col col-sm-12">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">關於HSVI</h1>
-                    <p class="lead">我們是一群對於Vtuber及其相關文化充滿嚮往，且具有行動力的台灣高中生，我們秉持著誠信、高效、有規範的工作原則想做出一位揚名國際的Vtuber~</p>
-                    <a href="#ourteam" class="btn btn-primary">我們的團隊</a>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="index.html"><div class="logo"><strong>幽夜</strong></div></a>
+        <ul class="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about_us.html">關於我們</a></li>
+           <li><a href="outlook.html">展望</a></li>
+           <li><a href="ourvtuber.html">Vtuber</a></li>
+           <li><a href="wantyou.html">徵人啟事</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </label>
+     </nav>
+  <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)">
+                <div class="card"> 
+                    <h2>瑋柏沙朗</h2>
+                    <h5>幽夜總召</h5>
+                    <p>表現一些我覺得欣賞一座賺錢允許檔案提醒曾經怎麼會網際快車，有意那就職業此時大多數也想尚未以下，放棄事項公司浪費會員價學歷製造什麼是的是，夏天聯想記憶還是前往男女相關內容業主上市用途校長對話廣場崗位，說什麼羅東街道文字都有窗口發表驅動，高中節目確定一副，生。</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <hr>
-    <!-- 團員介紹 -->
-
-    <!-- <div class="card shadow-lg col-lg" >
-                <div class="card-body">
-                    
-                </div>
-            </div> -->
-    <div class=" h-100 g-4 p-5 row border-bottom" style="background-color: rgba(255, 255, 255, 0.849); " id="main">
-        <div class="text-center">
-            <h1>總召</h1>
-        </div>
-        </br>
-        <div class="row g-4 align-items-center justify-content-around">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-3 text-center ">
-                <img class="rounded-circle" src="/static/weibo.jpg" alt="">
-            </div>
-            <div class="col-lg-5">
-                <h3 class="introduce text-center">
-                    瑋博沙朗，目前高中一年級，HSVI的總召，會一點寫作、會一點繪圖、會一點演講、會一點音樂，總之就是一個沒有專長，什麼都只會一點的怪人
-                </h3>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-    </div>
-    </br> </br>
-    <!---公關組--------------------------------------------------->
-    <div class="class=h-100 g-4 p-5  row justify-content-end border-bottom"
-        style="background-color: rgb(255, 255, 255); " id="social">
-        <h1 class="skill g-4">公關組</h1>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="/static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>稟銓</h4></br>
-                            <h5 class="card-text">
-                                HSVI公關組負責人: </br>
-                                成功高中一年級墊神 </br>
-                                目標未來三年不被掰彎 </br>
-                                專長是與他人交際</br>
-                                </br></br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!---建模組--------------------------------------------------->
-    <div class="class=h-100 g-4 p-5  row justify-content-end border-bottom"
-        style="background-color: rgb(255, 255, 255); " id="live2d">
-        <h1 class="skill g-4">建模組</h1>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="/static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>Neliko</h4></br>
-                            <h5 class="card-text">
-                                HSVI建模組負責人:</br>
-                                哇哈哈！ </br>
-                                回應HSVI號召現界 </br>
-                                帶來愛與勇氣、正義與善良、希望與和平 </br>
-                                提供還算ok的資訊科技應用能力 </br>
-                                成功高中，Neliko 在此参上
-                                </br></br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---文書組--------------------------------------------------->
-    <div class="class=h-100 g-4 p-5  row justify-content-end border-bottom"
-        style="background-color: rgb(255, 255, 255); " id="smellbook">
-        <h1 class="skill g-4">文書組</h1>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>Ddd</h4></br>
-                            <h5 class="card-text">
-                                HSVI文書組負責人:</br>
-                                我負責的是文書跟官網架設，</br>
-                                如果要有個名子的話應該是Ddd吧，</br>
-                                會寫一點程式，</br>
-                                正經的興趣是寫小說跟寫程式。 </br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>Hensy</h4></br>
-                            <h5 class="card-text">
-                                HSVI文書組組員: </br>
-                                我是Hensy， </br>
-                                音樂會一點， </br>
-                                電腦硬體會一點， </br>
-                                各種遊戲都玩得不錯。</br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                </br>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!---繪師組--------------------------------------------------->
-    <div class="class=h-100 g-4 p-5  row justify-content-end border-bottom"
-        style="background-color: rgb(255, 255, 255); " id="draw">
-        <h1 class="skill g-4">繪師組</h1>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>貓頭鷹</h4></br>
-                            <h5 class="card-text">
-                                HSVI繪師組繪師</br>
-                                我是貓頭鷹 </br>
-                                高一全職繪圖可接正比Q版除此以外一無是處：D </br>
-                                繪圈打滾多年（2年）深知其中生態 </br>
-                                如描圖抄襲等易炎上事件和各種糟糕性癖(
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>堇姬</h4></br>
-                            <h5 class="card-text">
-                                HSVI繪師組繪師:</br>
-                                我是堇姬，高中一年級，</br>
-                                興趣是繪圖（自學一年、 研究歷史、寫程式跟寫新詩，</br>
-                                目前擔任繪師兼中之人。</br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>番茄</h4></br>
-                            <h5 class="card-text">
-                                HSVI繪師組繪師:</br>
-                                我是番茄/柒枰，</br>
-                                高中一年級，</br>
-                                自學4年畫畫，</br>
-                                目前擔任繪師(⁠ㆁ⁠ω⁠ㆁ⁠)</br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <img src="static/cuteina.jpg" class="card-img-top" alt="...">
-                            </br>
-                            <h4 class="card-title"></br>顏料</h4></br>
-                            <h5 class="card-text">
-                                HSVI繪師組繪師:</br>
-                                我是顏料醬w</br>
-                                美術生一隻，</br>
-                                不知道算不算自學動漫人物繪畫，</br>
-                                擔任此次企劃的繪師</br>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                </br>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- 底部導航欄 -->
-    <footer class="container py-2 "
-        style="background-color: black; box-sizing: content-box; width: auto; max-width: 100%; height: auto; margin-bottom: -10px;">
-        <div class="row ">
-            <div class="col-lg-2"></div>
-            <div class="col-4 col-md">
-                <ul class="list-unstyled">
-                    <p class="h4 fw-bolder" style="color:#fff ;">頁面</p>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
-                            href="#">首頁</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
-                            href="/HSIV/about_us.html">關於HSVI</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
-                            href="#">...代添加</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-5"></div>
-            <div class="col-4 col-md">
-                <ul class="list-unstyled">
-                    <p class="h4 fw-bolder" style="color:#fff ;">社群</p>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
-                            href="#">IG</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
-                            href="#">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md">
-                <img src="/HSIV/static/HSVI_Logo.png" width="100" alt="" srcset="">
-            </div>
-        </div>
-
-    </footer>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true,
+        });
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-
 </html>

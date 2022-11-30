@@ -1,0 +1,185 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 20%; 
+    margin-top: 20px;
+} 
+
+.index{
+ 
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#2b1057,#7597de);
+    position: relative;
+    background-size:cover ;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+.index-text{
+  z-index: 1;
+  transition: 0.5s;
+}
+.index-text h3{
+  color: #f0f0f0;
+  text-shadow:0 0 5px #7597de,
+              0 0 25px #7597de,
+              0 0 50px #7597de,
+              0 0 200px #7597de;
+  font-size: 20px;
+  font-weight: 500;
+}
+.index-text h1{
+  margin: 10px 0px  25px;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 500;
+  color: aliceblue;
+  text-shadow:0 0 5px rgb(195, 0, 81),
+              0 0 25px rgb(195, 0, 81),
+              0 0 50px rgb(195, 0, 81),
+              0 0 200px rgb(195, 0, 81); 
+}
+.index-text h5{
+  margin-bottom: 23px;
+  font-size: 19px;
+  font-weight: 500;
+  color: aliceblue;
+}
+span{
+  text-shadow:0 0 5px rgb(195, 0, 81),
+              0 0 25px rgb(195, 0, 81),
+              0 0 50px rgb(195, 0, 81),
+              0 0 200px rgb(195, 0, 81); 
+}
+.social{
+  z-index: 2;
+}
+.social a{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b1057;
+  font-size: 17px;
+  color: #7597de;
+  margin-right:22px ;
+  margin-bottom: 30px;
+}
+.social a:hover{
+  transform: scale(1.2);
+  background: #7597de;
+  color: #2b1057;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.social a:active{
+  transform: scale(0.95);
+}
+.btn {
+  border-radius:0 ;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background: #2b1057;
+  transition: 0.5s;
+  color: #7597de;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.75rem;
+  box-shadow: 0.7px 0 10px rgba(66, 110, 184,5);
+  transform: scale(1.05);
+  overflow: hidden;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn:hover  {
+ background: #7597de;
+  box-shadow: 0 0 5px #7597de,
+  0 0 25px #7597de,
+  0 0 50px #7597de,
+  0 0 200px #7597de;
+  transform: scale(1.1);
+  border-radius: 10px;
+  color: #2b1057;
+  font-weight: 600;
+}
+.btn:active  {
+  transform: scale(1);
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+}
+.indeximg img{
+  max-width: 100%;
+  width: 540px;
+  border-radius: 50%;
+  height: auto;
+}
+.indeximgss{
+  opacity: 0;
+  position: absolute;
+}
+@media screen and (max-width: 991px) {
+  
+  .index{
+ 
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    grid-gap: 1rem;
+  }
+  .index-text{
+    z-index: 1;
+    transition: 0.5s;
+    padding-top: 55px;
+    text-align: center;
+  }
+  .index-text h2{
+    padding-top: 55px;
+    left: 20px;
+  }
+ .indeximg img{
+  opacity: 0;
+ }
+ .indeximg{
+  opacity: 0; 
+   position: absolute;
+ }
+ .indeximgss{
+  position:absolute;
+  opacity: 1;
+  margin-top: 80px;
+  top: 110px;
+  left: 130px;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+  transition: 0.5s;
+ 
+}
+.indeximgss img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+
+}

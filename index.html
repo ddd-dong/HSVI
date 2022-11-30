@@ -1,162 +1,55 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSVI</title>
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/main.css">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/upnav.css">
+    <link rel="stylesheet" href="static/index_style.css">
 </head>
 <body>
-    <!--navbar-->
-    <nav class="navbar-dark p-3 navbar-expand-lg navbar nav_menu" style="background-color: black;">
-        <div class="container">
-
-            <a href="index.html" class="navbar-brand"><h3>HSVI</h3></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html"><h5>Home</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_us.html"><h5>關於我們</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>展望</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>何謂Vtuber</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"><h5>工作細項</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href=""><h5>徵人啟事</h5></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--cover-->
-    <div class="bg_background_img p-5 text-white text-center container-fluid " 
-    style="background-image: url(static/cover_index.png);
-           height: 100vh;">
-        <div class="position-absolute top-50 start-50 translate-middle" style="align-content: center; width: 100%; height: 10vh;border-top: 20px; ">
-            <h5 class="hsvi" style="animation: 1s move1 forwards; height: 10vh;">
-                <a href="index.html" class="navbar-brand "
-                    style="color: rgb(212, 210, 210); font-size: 3.5rem; text-align: center; " > 
-                    <strong><I>FLUCTLIGHT</I> </strong>
-                </a>
-            </h5>
-            <h5 class="hsvi" style="animation: 1.5s move1 forwards;">
-                <a href="index.html" class="navbar-brand "
-                    style="color: rgb(147, 3, 187); font-size: 2rem; text-align: center;" >
-                    HSVI一VTUBER培育計畫
-                </a>
-            </h5> 
-        </div>
-    </div> 
-    <!-- 團隊介紹 -->
-    <div class="container text-center pt-5" >
-        <div class="container p-5">
-            <h5 class="display-4 fw-bold">團隊介紹</h5>
-            <div class="row align-items-center g-5 py-5 align-self-center ">
-              <div class="col col-sm-12 col-lg-6 align-self-center align-items-center ">
-                <img src="static/aboutus_photo.png" class="mx-lg-auto img-fluid align-items-center rounded-circle" alt="Bootstrap Themes" loading="lazy">
-              </div>
-              <div class="col-lg-6 col col-sm-12">
-                <h1 class="display-5 fw-bold lh-1 mb-3">關於HSVI</h1>
-                <p class="lead" >我們是一群對於Vtuber及其相關文化充滿嚮往，</br>且具有行動力的台灣高中生，</br>我們秉持著誠信、高效、有規範的工作原則想做出一位揚名國際的Vtuber~</p>
-                <a href="about_us.html" class="btn btn-primary">了解更多</a>
-              </div>
-            </div>
-          </div>
-    </div>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><strong>幽夜</strong></div>
+        <ul class="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about_us.html">關於我們</a></li>
+           <li><a href="outlook.html">展望</a></li>
+           <li><a href="ourvtuber.html">Vtuber</a></li>
+           <li><a href="wantyou.html">徵人啟事</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </label>
+     </nav>
+    <section class="index" id="index">
     
-    <!-- 底部導航欄 -->
-    <footer class="container py-2 " style=" background-color: black; box-sizing: content-box; width: auto; max-width: 100%; height: auto; margin-bottom: -10px; justify-content-between">
-      <div class="align-items-center justify-content-between d-flex">
-        <div class="col-lg-2"></div>
-            <div class="col-lg-6 col-md">
-                <ul class="list-unstyled">
-                    <p class="h4 fw-bolder" style="color:#fff ;">頁面</p>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">首頁</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="/HSIV/about_us.html">關於HSVI</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">...代添加</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-md">
-                <ul class="list-unstyled">
-                    <p class="h4 fw-bolder" style="color:#fff ;">社群</p>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">IG</a></li>
-                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md">
-                <img src="/HSIV/static/HSVI_Logo.png" width="100" alt="" srcset="">
-            </div>
+      
+        <div class="index-text">
+            <h3>我們是</h3>
+            <h1>幽夜工作室</h1>    
+           
+            <h5>由高中生所組成的<span>vtuber團體</span></h5>
+           <div class="social">
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class='bx bxl-instagram-alt'></i></i></a>
+                <a href=""><i class='bx bxl-youtube'></i></i></a>
+           </div>
+           <a href="outlook.html" class="btn">了解更多</a>
         </div>
-
-    </footer>
+        <div class="indeximg">
+            <img src="static/img/aboutus_photo.png" alt="">
+        </div>
+     <div class="indeximgss">
+            <img src="static/img/aboutus_photo.png" alt="">
+            </div>
+    </section>
     
-    <!-- <footer class="container py-5" style="background-color: black;">
-        <div class="row">
-          <div class="col-12 col-md">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-            <small class="d-block mb-3 text-muted">© 2017–2022</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" href="#">Cool stuff</a></li>
-              <li><a class="link-secondary" href="#">Random feature</a></li>
-              <li><a class="link-secondary" href="#">Team feature</a></li>
-              <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-              <li><a class="link-secondary" href="#">Another one</a></li>
-              <li><a class="link-secondary" href="#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" href="#">Resource name</a></li>
-              <li><a class="link-secondary" href="#">Resource</a></li>
-              <li><a class="link-secondary" href="#">Another resource</a></li>
-              <li><a class="link-secondary" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" href="#">Business</a></li>
-              <li><a class="link-secondary" href="#">Education</a></li>
-              <li><a class="link-secondary" href="#">Government</a></li>
-              <li><a class="link-secondary" href="#">Gaming</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" href="#">Team</a></li>
-              <li><a class="link-secondary" href="#">Locations</a></li>
-              <li><a class="link-secondary" href="#">Privacy</a></li>
-              <li><a class="link-secondary" href="#">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer> -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
-
+  
 </body>
 </html>
