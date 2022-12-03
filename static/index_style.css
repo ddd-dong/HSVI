@@ -16,11 +16,12 @@ section{
 } 
 
 .index{
- 
+    
     min-height: 100vh;
     height: 100%;
-    width: 100%;
-    background: linear-gradient(45deg,#2b1057,#7597de);
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background: linear-gradient(45deg,#2b1057,#7597de); */
     position: relative;
     background-size:cover ;
     background-position: center;
@@ -33,25 +34,22 @@ section{
   z-index: 1;
   transition: 0.5s;
 }
-.index-text h3{
-  color: #f0f0f0;
+/* .index-text h3{
   text-shadow:0 0 5px #7597de,
               0 0 25px #7597de,
               0 0 50px #7597de,
               0 0 200px #7597de;
-  font-size: 20px;
-  font-weight: 500;
-}
+} */
 .index-text h1{
   margin: 10px 0px  25px;
   font-size: 5rem;
   line-height: 1;
   font-weight: 500;
   color: aliceblue;
-  text-shadow:0 0 5px rgb(195, 0, 81),
+  /* text-shadow:0 0 5px rgb(195, 0, 81),
               0 0 25px rgb(195, 0, 81),
               0 0 50px rgb(195, 0, 81),
-              0 0 200px rgb(195, 0, 81); 
+              0 0 200px rgb(195, 0, 81);  */
 }
 .index-text h5{
   margin-bottom: 23px;
@@ -68,9 +66,9 @@ span{
 .social{
   z-index: 2;
 }
-.social a{
-  width: 35px;
-  height: 35px;
+.social .icon{
+  width: 2.195rem;
+  height: 2.195rem;
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
@@ -82,46 +80,46 @@ span{
   margin-bottom: 30px;
 }
 .social a:hover{
-  transform: scale(1.2);
-  background: #7597de;
-  color: #2b1057;
-  font-size: 20px;
-  transition: 0.5s;
+  transform: scale(1.2)!important;
+  background: #7597de!important;
+  color: #2b1057!important;
+  font-size: 20px !important;
+  transition: 0.5s!important;
 }
 .social a:active{
   transform: scale(0.95);
 }
 .btn {
   border-radius:0 ;
-  width: 150px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
+  width: 14rem;
+  height: 2.65rem;
+  justify-content: center !important;
+  align-items: center !important;
+  display: inline-flex !important;
   background: #2b1057;
   transition: 0.5s;
   color: #7597de;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block ;
   font-size: 1.75rem;
-  box-shadow: 0.7px 0 10px rgba(66, 110, 184,5);
-  transform: scale(1.05);
+  box-shadow: 0.7px 0 10px rgba(66, 110, 184,5) !important;
+  transform: scale(1.05) !important;
   overflow: hidden;
-  font-weight: 600;
-  border-radius: 5px;
+  font-weight: 600 !important;
+  border-radius: 5px !important;
 }
 
-.btn:hover  {
- background: #7597de;
+.btn:hover{
+ background: #7597de!important;
   box-shadow: 0 0 5px #7597de,
   0 0 25px #7597de,
   0 0 50px #7597de,
-  0 0 200px #7597de;
-  transform: scale(1.1);
-  border-radius: 10px;
-  color: #2b1057;
-  font-weight: 600;
+  0 0 200px #7597de!important;
+  transform: scale(1.1)!important;
+  border-radius: 10px!important;
+  color: #2b1057!important;
+  font-weight: 600!important;
 }
 .btn:active  {
   transform: scale(1);

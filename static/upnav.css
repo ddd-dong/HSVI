@@ -5,6 +5,12 @@ body {
     height: 100vh;
 	
 }
+/* .nav_menu{
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    width: 101%;
+} */
 
 nav {z-index: 100;
 	position: fixed;
@@ -28,7 +34,7 @@ nav .logo {
 	display: flex;
 	align-items: center;
 	font-size: 30px;
-	color: rgb(194, 0, 165);
+	color: rgb(165, 0, 194);
 }
 nav .links {
 	z-index: 100;

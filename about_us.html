@@ -1,67 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coverflow  effect swiper</title>
-    <link rel="stylesheet" type="text/css"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
-    <link rel="stylesheet" type="text/css" href="static/about_us.css">   
-    <link rel="stylesheet" type="text/css" href="static/upnav.css">
+    <title>HSVI</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/about_us.css">
 </head>
 <body>
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <a href="index.html"><div class="logo"><strong>幽夜</strong></div></a>
-        <ul class="links">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about_us.html">關於我們</a></li>
-           <li><a href="outlook.html">展望</a></li>
-           <li><a href="ourvtuber.html">Vtuber</a></li>
-           <li><a href="wantyou.html">徵人啟事</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-           <div class="line"></div>
-           <div class="line"></div>
-           <div class="line"></div>
-        </label>
-     </nav>
-  <div class="swiper-container">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)">
-                <div class="card"> 
-                    <h2>瑋柏沙朗</h2>
-                    <h5>幽夜總召</h5>
-                    <p>表現一些我覺得欣賞一座賺錢允許檔案提醒曾經怎麼會網際快車，有意那就職業此時大多數也想尚未以下，放棄事項公司浪費會員價學歷製造什麼是的是，夏天聯想記憶還是前往男女相關內容業主上市用途校長對話廣場崗位，說什麼羅東街道文字都有窗口發表驅動，高中節目確定一副，生。</p>
+   <!--navbar--> <nav class="navbar-dark p-3 navbar-expand-lg navbar nav_menu" style="background-color: black;">
+    <div class="container">
+
+        <a href="index.html" class="navbar-brand">
+            <h3>HSVI</h3>
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html"><h5>Home</h5></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: auto;">
+                     <h5 class="dropdown-toggle">關於我們</h5>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
+                        <li><a class="dropdown-item text-white" href="about_us.html#clerical">文書組</a></li>
+                        <li><a class="dropdown-item text-white" href="about_us.html#social">公關組</a></li>
+                        <li><a class="dropdown-item text-white" href="about_us.html#live2d">建模組</a></li>
+                        <li><a class="dropdown-item text-white" href="about_us.html#draw">繪師組</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="outlook.html"><h5>展望</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="whatv.html"><h5>什麼是Vtuber</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="about_Liver.html"><h5>我們的Vtuber</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="wantyou.html"><h5>徵人啟事</h5></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+    <!-- 團隊介紹 --> <div class="container text-center pt-5" >
+        <div class="container col-xxl-8 px-4 py-5">
+            <h5 class="display-4 fw-bold">團隊介紹</h5>
+            <div class="row align-items-center g-5 py-5 align-self-center">
+              <div class="col col-sm-12 col-lg-6 align-self-center align-items-center ">
+                <img src="static/img/aboutus_photo.png" class="mx-lg-auto img-fluid align-items-center" alt="Bootstrap Themes" loading="lazy">
+              </div>
+              <div class="col-lg-6 col col-sm-12">
+                <h1 class="display-5 fw-bold lh-1 mb-3">關於HSVI</h1>
+                <p class="lead" >我們是一群對於Vtuber及其相關文化充滿嚮往，且具有行動力的台灣高中生，我們秉持著誠信、高效、有規範的工作原則想做出一位揚名國際的Vtuber~</p>
+                <a href="#ourteam" class="btn btn-primary">我們的團隊</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr>
+    <br>
+    <div class="container" id="ourteam">
+
+    <!--文書組 --><div class="h-100 g-4 p-5  row container"
+    style="background-color: rgb(255, 255, 255); " id="clerical">
+    <h5 class="h1 g-4">文書組</h5>
+    <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg"  src="static/img/cuteina.jpg" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">example</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <!-- 有超過4個社群以上的要調整排版 -->
+                    <a href="" class="me-2"><img src="static/img/instagram.png" title="IG:" height="30rem"></a>
+                    <a href="" class="me-2"><img src="static/img/twitter.png" title="Twitter:" height="30rem"></a>
+                    <a href="" class="me-2"><img src="static/img/facebook.png" title="FB:" height="30rem"></a>
+                    <a href="" class="me-2"><img src="static/img/pixiv.png" title="Pixiv:" height="30rem"></a>
+                    <a href="" class="me-2"><img src="static/img/youtube.png" title="Youtube:" height="30rem"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg" >
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg" src="static/img/weibo.png" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">瑋博沙朗</h5>
+                    <p class="card-text">HSVI 的總召，是個什麼都會一點點的人類！喜歡看小說還有追台V的直播(⁠≧⁠▽⁠≦⁠)</p>
+                    <br>
+                    <br>
+                    <a href="https://twitter.com/6JhztE3HO0xh0C8?t=9kYlXHNcKsORoAA0Qeiu_A&s=09" class="me-2"><img src="static/img/twitter.png" title="Twitter:瑋博沙朗" height="30rem"></a>
+                    <a href="https://youtube.com/channel/UCPmBskxG9VcxsOHMmC2WN6g" class="me-2"><img src="static/img/youtube.png" title="Youtube:小沙朗的調音間" height="30rem"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg"  src="static/img/ddd_head.png" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">Ddd</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <br>
+                    <a href="" class="me-2"><img src="static/img/twitter.png" title="Twitter:" height="30rem"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg"  src="static/img/hensy_head.png" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">Hensy</h5>
+                    <p class="card-text">遊戲廢人</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <br>
+    <!-- 公關組 --><div class="h-100 g-4 p-5  row  container"
+        style="background-color: rgb(255, 255, 255); " id="social">
+        <h5 class="h1 g-4">公關組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="object-position: 50% 0%;"  src="static/img/about_head1.jpg" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">稟銓</h5>
+                        <p class="card-text">一個什麼都不會的普通高中生</p>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/propanal93/" class="me-2"><img src="static/img/instagram.png" title="IG:propanal93" height="30rem"></a>
+                    </div>
+                    </a>
                 </div>
             </div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
-          </div>
-          <div class="swiper-pagination"></div>
-      </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflow: {
-            rotate: 20,
-            stretch: 0,
-            depth: 200,
-            modifier: 1,
-            slideShadows: true,
-        },
-        loop: true,
-        });
-    </script>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"  src="static/img/Yuyi.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">羽夜</h5>
+                        <p class="card-text">一位超ㄎㄧㄤ的幽靈</p>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/yu._.yi07/" class="me-2"><img src="static/img/instagram.png" title="IG：yu._.yi07" height="30rem"></a>
+                        <a href="https://twitter.com/Star_Yuyi" class="me-2"><img src="static/img/twitter.png" title="Twitter：星羽夜Yuyi" height="30rem"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100074414545118" class="me-2"><img src="static/img/facebook.png" title="FB：Yu Yi" height="30rem"></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- 建模組 --><div class="h-100 g-4 p-5  row  container"
+        style="background-color: rgb(255, 255, 255); " id="live2d">
+        <h5 class="h1 g-4">建模組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="background-color: black;" src="static/img/alex.jpg" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">neliko</h5>
+                        <p class="card-text"> HSVI 建模糊組成員喜歡看nene直播還有追rushia烤肉 </p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="background-color: black;"  src="static/img/ryder.jpg" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">懶得/喜德</h5>
+                        <p class="card-text">HSVI 建模(糊)組成員,是個臭DD!喜歡看GURA還有追GURA直播</p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="background-color: black; object-position: 40% 40%;"  src="static/img/leo.jpg" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">利行</h5>
+                        <p class="card-text">HSVI 建模糊組成員喜歡看rushia直播(不能看了)還有追rushia烤肉</p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 繪圖組 --><div class="h-100 g-4 p-5  row  container"
+     style="background-color: rgb(255, 255, 255); " id="draw">
+     <h5 class="h1 g-4">繪圖組</h5>
+     <div class="row align-items-center row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg" style="object-position: 50% 10%;"  src="static/img/Naup_head.png" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">Naup堇姬</h5>
+                    <p class="card-text">Naupすみれ姫(簡稱堇姬)，台灣邊緣繪師堇姬仙人姊姊</p>
+                    <br>
+                    <a href="https://twitter.com/naup96721?t=y6KLInn0AAmtN-t8X85erw&s=06" class="me-2"><img src="static/img/twitter.png" title="Twitter:@naup96721" height="30rem"></a>
+                    <a href="https://www.pixiv.net/users/69038591" class="me-2"><img src="static/img/pixiv.png" title="堇姬Naup-Pixiv" height="30rem"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+         <div class="col">
+             <div class="card shadow-lg">
+                 <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                 <img class="card-img-top cardimg"   src="static/img/tomato_head.jpg" alt="" srcset="">
+                 <div class="card-body">
+                     <h5 class="card-title">番茄/柒枰</h5>
+                     <p class="card-text">HSVI繪圖組成員，目前是普通高中生</p>
+                     <br>
+                     <br>
+                     <a href="https://www.instagram.com/kuojac6161/" class="me-2"><img src="static/img/instagram.png" title="IG:kuojac6161" height="30rem"></a>
+                     <a href="https://twitter.com/FuqU72_qiping61" class="me-2"><img src="static/img/twitter.png" title="Twitter:@FuqU72_qiping61" height="30rem"></a>
+                     <a href="https://www.facebook.com/profile.php?id=100085755849518" class="me-2"><img src="static/img/facebook.png" title="FB:柒枰" height="30rem"></a>
+                 </div>
+                 </a>
+             </div>
+         </div>
+         <div class="col">
+             <div class="card shadow-lg">
+                 <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                 <img class="card-img-top cardimg"   src="static/img/cuteina.jpg" alt="" srcset="">
+                 <div class="card-body">
+                     <h5 class="card-title">顏料醬</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <br>
+                 </div>
+                 </a>
+             </div>
+         </div>
+         <div class="col">
+            <div class="card shadow-lg">
+                <a href="about_Ddd.html" class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg"   src="static/img/owl_head.jpg" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">貓頭鷹</h5>
+                    <p class="card-text">打龍套的畫圖瘋子(目前</p>
+                    <br>
+                    <a href="https://twitter.com/owl02004" class="me-2"><img src="static/img/twitter.png" title="Twitter:貓頭鷹フクロウ@owl02004" height="30rem"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100041448250586" class="me-2"><img src="static/img/facebook.png" title="FB:フクロウ" height="30rem"></a>
+                </div>
+                </a>
+            </div>
+        </div>
+     </div>
+ </div>
+</div>
+<br>
+    <!-- 底部導航欄 --><footer class="container py-2 " style="background-color: black; box-sizing: content-box; width: auto; max-width: 100%; height: auto; margin-bottom: -10px;">
+        <div class="row ">
+            <div class="col-4 col-md">
+                <ul class="list-unstyled">
+                    <p class="h4 fw-bolder" style="color:#fff ;">頁面</p>
+                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">首頁</a></li>
+                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="about_us.html">關於HSVI</a></li>
+                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">...代添加</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-md">
+                <ul class="list-unstyled">
+                    <p class="h4 fw-bolder" style="color:#fff ;">社群</p>
+                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">IG</a></li>
+                    <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;" href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md">
+                <img src="static/img/HSVI_Logo.png" width="100" alt="" srcset="">
+            </div>
+        </div>
+    
+    </footer>
+        
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </html>

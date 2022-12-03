@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coverflow  effect swiper</title>
+    <link rel="stylesheet" type="text/css"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="static/about_us.css">   
+    <link rel="stylesheet" type="text/css" href="static/upnav.css">
+</head>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="index.html"><div class="logo"><strong>幽夜</strong></div></a>
+        <ul class="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about_us.html">關於我們</a></li>
+           <li><a href="outlook.html">展望</a></li>
+           <li><a href="ourvtuber.html">Vtuber</a></li>
+           <li><a href="wantyou.html">徵人啟事</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </label>
+     </nav>
+  <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)">
+                <div class="card"> 
+                    <h2>瑋柏沙朗</h2>
+                    <h5>幽夜總召</h5>
+                    <p>表現一些我覺得欣賞一座賺錢允許檔案提醒曾經怎麼會網際快車，有意那就職業此時大多數也想尚未以下，放棄事項公司浪費會員價學歷製造什麼是的是，夏天聯想記憶還是前往男女相關內容業主上市用途校長對話廣場崗位，說什麼羅東街道文字都有窗口發表驅動，高中節目確定一副，生。</p>
+                </div>
+            </div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+              <div class="swiper-slide" style="background-image:url(static/img/about_head1.jpg)"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true,
+        });
+    </script>
+</body>
+</html>
