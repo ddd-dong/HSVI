@@ -44,7 +44,7 @@
     top: -25%;
     height: 20rem;
     transform: translateY(40%);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s;
     opacity: 1;
 }
 .recruitment_underbox_open p {
@@ -56,14 +56,15 @@
 .recruitment_underbox_open .rounded_paperwork_underimg {
     height: 18rem;
     /* transform: translateY(5%); */
-    transition: all 1s ease-in-out;
+    transition: all 0.5s;
+    /*  ease-in-out */
     opacity: 1;
 }
 
 .recruitment_box_open {
     height: 20rem;
     transform: translateY(40%);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s;
     opacity: 1;
 }
 
