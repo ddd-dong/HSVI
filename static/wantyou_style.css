@@ -25,6 +25,7 @@
     transition: 0.5s;
     transition-duration: 2s;
     z-index: -1;
+
 }
 .recruitment_underbox p {
     opacity: 0;
@@ -42,7 +43,7 @@
 }
 .recruitment_underbox_open {
     top: -25%;
-    height: 20rem;
+    height: 23rem;
     transform: translateY(40%);
     transition: all 0.5s;
     opacity: 1;
@@ -61,16 +62,16 @@
     opacity: 1;
 }
 
-.recruitment_box_open {
-    height: 20rem;
+/* .recruitment_box_open {
+    height: 25rem;
     transform: translateY(40%);
     transition: all 0.5s;
     opacity: 1;
-}
+} */
 
 @media screen and (max-width: 991px) {
     .recruitment_underbox_open {
-        height: 43rem;
+        height: 50rem;
         top: -32%;
     }
     .recruitment_underbox_open .rounded_paperwork_underimg {
