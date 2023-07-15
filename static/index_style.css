@@ -19,6 +19,9 @@
     width: 100vw;
     /* background-color: rgba(0, 0, 0, 0.6); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/index/index_cover_shadow.png);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/index/index_cover_shadow.png); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/index/index_cover_shadow.png);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(img/index/index_cover_shadow.png); */
     /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/indexbackground.png); */
     position: relative;
     background-size:cover ;
