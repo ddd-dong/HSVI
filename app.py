@@ -7,7 +7,7 @@ from PIL import Image
 import io
 app = Flask(__name__)
 app.register_blueprint(newssystem)
-url = "mongodb+srv://hsvi0919:Fx794j4sLWllGcho@hsvi.bquldrx.mongodb.net/?retryWrites=true&w=majority"
+url = "mongodb+srv://hsvi0919:<password>@hsvi.bquldrx.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(url,tls=True,tlsAllowInvalidCertificates=True)
 db = client['hsvi']
 collection = db['announcement']
