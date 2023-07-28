@@ -11,6 +11,15 @@
 }
 
 
+hr{
+  background-color:white;
+  height: 0.3rem;
+}
+
+.announce img{
+  object-fit: cover;
+  height: 20rem;
+}
 
 .index{
     
@@ -262,7 +271,6 @@ span{
   color: white;
 }
 .row_indexnav{
-  background: #2b1057;
   padding: 40px 40px;
   border-radius: 10px;
   cursor: pointer;

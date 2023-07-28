@@ -1,39 +1,20 @@
 from flask import Flask, render_template
 from news.newssystem import app_route as newssystem
-from pymongo.mongo_client import MongoClient
+from __init__ import client
+from news.news_load import news_load_index
 import pymongo
 import os
-from PIL import Image
-import io
+
 app = Flask(__name__)
 app.register_blueprint(newssystem)
-url = "mongodb+srv://hsvi0919:<password>@hsvi.bquldrx.mongodb.net/?retryWrites=true&w=majority"
-client = MongoClient(url,tls=True,tlsAllowInvalidCertificates=True)
-db = client['hsvi']
-collection = db['announcement']
+
 
 
 @app.route('/')
 def index():
-    sorted_documents = collection.find().sort('time',-1)
-
-    #ann1
-    title1=sorted_documents[0]['title']
-    image =collection.find_one({"time":sorted_documents[0]['time']})
-    pil_img = Image.open(io.BytesIO(image['img']))
-    pil_img.save("static/img/announcement/time_{}.png".format("first"))
-    #ann2
-    title2=sorted_documents[1]['title']
-    image =collection.find_one({"time":sorted_documents[1]['time']})
-    pil_img = Image.open(io.BytesIO(image['img']))
-    pil_img.save("static/img/announcement/time_{}.png".format("second"))
-    #ann3
-    title3=sorted_documents[2]['title']
-    image =collection.find_one({"time":sorted_documents[2]['time']})
-    pil_img = Image.open(io.BytesIO(image['img']))
-    pil_img.save("static/img/announcement/time_{}.png".format("third"))
-    
-    return render_template('index.html',a=title1,b=title2,c=title3)
+    _announce = news_load_index()
+    print(_announce)
+    return render_template('index.html',a=_announce[0],b=_announce[1],c=_announce[2])
 
 @app.route('/about_us')
 def aboutus():
@@ -54,4 +35,5 @@ def erro404(e):
 
 
 if __name__=="__main__":
-    app.run(host='0.0.0.0', port=80,debug=True) #host='0.0.0.0'
+    print(client.list_database_names())
+    app.run( port=5000,debug=True) #host='0.0.0.0'
