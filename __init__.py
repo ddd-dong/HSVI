@@ -7,6 +7,12 @@ load_dotenv(index_path+"/tst.env")
 
 print(os.getenv("password"),os.getenv('token'))
 
+alert_now={
+    "message":"看看我們新推出的Vtuber",
+    "bg-color":"rgba(144, 142, 142, 0.427)",
+    "type":"info"
+}
+
 url = f"mongodb+srv://hsvi0919:Fx794j4sLWllGcho@hsvi.bquldrx.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(url,tls=True,tlsAllowInvalidCertificates=True)
 db = client['hsvi']

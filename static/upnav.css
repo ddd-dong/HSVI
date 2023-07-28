@@ -11,9 +11,15 @@ body {
     z-index: 9999;
     width: 101%;
 } */
-
-nav {z-index: 100;
+nav{
 	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+.navbox {z-index: 100;
+	/* position: fixed; */
 	z-index: 10;
 	left: 0;
 	right: 0;
@@ -26,11 +32,11 @@ nav {z-index: 100;
     0 0 25px rgb(72, 72, 197); */
     /* border-radius: 0px 0px 5px 5px; */
 }
-nav .logo {
+.navbox .logo {
 	z-index: 100;
 	height: 100%;
 }
-nav .links {
+.navbox .links {
 	z-index: 100;
 	float: right;
 	padding: 0;
@@ -41,10 +47,10 @@ nav .links {
 	justify-content: space-around;
 	align-items: center;
 }
-nav .links li {
+.navbox .links li {
 	list-style: none;
 }
-nav .links a {
+.navbox .links a {
 	z-index: 100;
 	display: block;
 	padding: 1em;
@@ -55,7 +61,7 @@ nav .links a {
     border-radius: 8px;
     transition: 0.5s;
 }
-nav .links a:hover {
+.navbox .links a:hover {
 	background:  rgb(194, 0, 165);
     color: #fff;
     border-radius: 8px;
@@ -65,7 +71,7 @@ nav .links a:hover {
 	position: absolute;
 	top: -100px;
 }
-nav .icon-burger {
+.navbox .icon-burger {
 	z-index: 100;
 	display: none;
 	position: absolute;
@@ -73,7 +79,7 @@ nav .icon-burger {
 	top: 50%;
 	transform: translateY(-50%);
 }
-nav .icon-burger .line {
+.navbox .icon-burger .line {
 	z-index: 100;
 	width: 30px;
 	height: 5px;
@@ -83,12 +89,12 @@ nav .icon-burger .line {
 	transition: all .3s ease-in-out;
 }
 @media screen and (max-width: 991px) {
-	nav .logo {
+	.navbox .logo {
 		float: none;
 		width: auto;
 		justify-content: center;
 	}
-	nav .links {
+	.navbox .links {
 		float: none;
 		position: fixed;
 		z-index: 9;
@@ -105,22 +111,22 @@ nav .icon-burger .line {
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
 	}
-	nav .links a {
+	.navbox .links a {
 		font-size: 20px;
 	}
-	nav :checked ~ .links {
+	.navbox :checked ~ .links {
 		bottom: 0;
 	}
-	nav .icon-burger {
+	.navbox .icon-burger {
 		display: block;
 	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
+	.navbox :checked ~ .icon-burger .line:nth-child(1) {
 		transform: translateY(10px) rotate(225deg);
 	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
+	.navbox :checked ~ .icon-burger .line:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
 	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
+	.navbox :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
 	

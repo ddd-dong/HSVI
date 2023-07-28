@@ -15,33 +15,43 @@
             text-align: center;
           }
     </style>
+
     {% block css %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="static/alertbar.css">   
 </head>
 <body style="overflow-x: hidden;">
 
     <nav>
-        <input id="nav-toggle" type="checkbox">
-        <a href="/" class="text-decoration-none"><img class="logo" src="static/img/HSVI_logo_wt.png"></a>
-        <ul class="links">
-           <li class="dropdown"><a class="dropdown-toggle" href="about_us"  role="button"  type="button" data-bs-toggle="dropdown" aria-expanded="false">關於我們</a>
-           <ul class="dropdown-menu"  style="background-color: black;">
-                <li><a class="dropdown-item text-white" href="about_us#vtuber">Vtuber</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#draw">繪師組</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#pv">PV</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#mix">混音</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#clerical">行政組</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#social">行銷組</a></li>
-                <li><a class="dropdown-item text-white" href="about_us#live2d">建模組</a></li>
-            </ul></li> 
-
-           <li><a href="explainVtuber">什麼是Vtuber</a></li>
-           <li><a href="work_with_us">徵人啟事</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-           <div class="line"></div>
-           <div class="line"></div>
-           <div class="line"></div>
-        </label>
+        <div class="navbox">
+            <input id="nav-toggle" type="checkbox">
+            <a href="/" class="text-decoration-none"><img class="logo" src="static/img/HSVI_logo_wt.png"></a>
+            <ul class="links">
+               <li class="dropdown"><a class="dropdown-toggle" href="about_us"  role="button"  type="button" data-bs-toggle="dropdown" aria-expanded="false">關於我們</a>
+               <ul class="dropdown-menu"  style="background-color: black;">
+                    <li><a class="dropdown-item text-white" href="about_us#vtuber">Vtuber</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#draw">繪師組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#pv">PV</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#mix">混音</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#clerical">行政組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#social">行銷組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#live2d">建模組</a></li>
+                </ul></li> 
+    
+               <li><a href="explainVtuber">什麼是Vtuber</a></li>
+               <li><a href="work_with_us">徵人啟事</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+            </label>
+        </div>
+        {% if alert_now %}
+        <div class="alert_bar" style="background-color:{{alert_now['color']}}" >
+            <span class="close_btn" style="text-shadow: none;">&times;</span>  
+            {{alert_now["message"]}}
+        </div>
+        {% endif %}
      </nav>
 
     {% block main %}{% endblock %}
@@ -77,6 +87,7 @@
 
     </footer>
     <footer>
+        <script src="static/alert_close.js"></script>
         {% block footer %}{% endblock %}
     </footer>
 </body>

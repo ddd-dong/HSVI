@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from news.newssystem import app_route as newssystem
-from __init__ import client
+from __init__ import client,alert_now 
 from news.news_load import news_load_index
 import pymongo
 import os
@@ -14,7 +14,7 @@ app.register_blueprint(newssystem)
 def index():
     _announce = news_load_index()
     print(_announce)
-    return render_template('index.html',a=_announce[0],b=_announce[1],c=_announce[2])
+    return render_template('index.html',alert_now = alert_now ,a=_announce[0],b=_announce[1],c=_announce[2])
 
 @app.route('/about_us')
 def aboutus():

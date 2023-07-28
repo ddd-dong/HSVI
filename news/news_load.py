@@ -1,4 +1,4 @@
-from __init__ import collection,index_path
+from __init__ import collection,index_path,alert_now
 from PIL import Image
 import io
 
@@ -13,3 +13,9 @@ def news_load_index(n:int=3)->tuple:
         pil_img.save(f"{index_path}/static/img/announcement/time_a.png")
     print(_announce)
     return _announce
+
+
+def alert_show()->dict:
+    if alert_now:
+        return alert_now
+    return None
