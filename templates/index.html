@@ -81,30 +81,16 @@
     <br>
     <div class="container" id="features">
         <div class="row">
-        <div class="col-md-4">
-            <div class="card announce" >
-            <img src="static/img/announcement/time_1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-text">{{a}}</h5>
+        {% for i in range(announcements|length-1,-1,-1) %}
+            <div class="col-md-4">
+                <div class="card announce" >
+                <img src="static/img/announcement/time_{{i}}.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">{{announcements[i]}}</h5>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card announce" >
-            <img src="static/img/announcement/time_2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-text">{{b}}</h5>
-            </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card announce" >
-            <img src="static/img/announcement/time_3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-text">{{c}}</h5>
-            </div>
-            </div>
-        </div>
+        {% endfor %}
         </div>
     </div>
 </section>
