@@ -31,9 +31,9 @@
                 <a class="icon text-decoration-none" href="https://www.facebook.com/profile.php?id=100087180011121"><i class="bx bxl-facebook"></i></a>
                 <a class="icon text-decoration-none" href="https://twitter.com/HSVI45634750"><i class="bx bxl-twitter"></i></a>
                 <a class="icon text-decoration-none" href="https://www.instagram.com/hsvi_111/"><i class='bx bxl-instagram-alt'></i></a>
-                <a class="icon text-decoration-none rounded-pill" href="about_us.html" style="height: 2.195rem; width: auto; padding: 0rem 1rem 0rem 1rem; font-weight: 600;">關於我們</a>
+                <a class="icon text-decoration-none rounded-pill" href="{{url_for('aboutus')}}" style="height: 2.195rem; width: auto; padding: 0rem 1rem 0rem 1rem; font-weight: 600;">關於我們</a>
            </div>
-           <a href="ourvtuber.html" class="btn_onmouse btn">我們的Vtuber</a>
+           <a href="{{url_for('aboutus')}}#ourVtuber" class="btn_onmouse btn">我們的Vtuber</a>
     </div>
 </div>
 
@@ -82,14 +82,14 @@
     <div class="container" id="features">
         <div class="row">
         {% for i in range(announcements|length-1,-1,-1) %}
-            <div class="col-md-4">
+            <div class="col-md-4 text-decoration-none"> <a class="text-decoration-none" href="https://forms.gle/KNvrwfXpUXVfWfBk8">
                 <div class="card announce" >
                 <img src="static/img/announcement/time_{{i}}.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-text">{{announcements[i]}}</h5>
+                    <h5 class="card-text " style="color: black;">{{announcements[i]}}</h5>
                 </div>
                 </div>
-            </div>
+            </a></div>
         {% endfor %}
         </div>
     </div>

@@ -12,7 +12,7 @@ app.register_blueprint(newssystem)
 @app.route('/')
 def index():
     _announce = db.load_news(index_shownews_n)
-    return render_template('index.html',alert_now = alert_now ,announcements = _announce)
+    return render_template('index.html' ,announcements = _announce) #alert_now = alert_now
 
 @app.route('/about_us')
 def aboutus():
